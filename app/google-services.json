@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "411452326655",
+    "firebase_url": "https://wallpaper-66592.firebaseio.com",
+    "project_id": "wallpaper-66592",
+    "storage_bucket": "wallpaper-66592.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411452326655:android:d117b35db56b4dbaaac2ca",
+        "android_client_info": {
+          "package_name": "kushal.droidlab.vibewallpapers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411452326655-d676cmmdhr89rq6qn7qg5lurlco1q152.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4F7SWuSDp16NnJqIsqQQPkvAoifSmy3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411452326655-d676cmmdhr89rq6qn7qg5lurlco1q152.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

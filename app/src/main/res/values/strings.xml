@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Vibe Wallpapers</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_of_account">Image_of_account</string>
+    <string name="opps_you_are_not_logged_in">Opps! You are not logged in!!!!!</string>
+    <string name="wallpaper_view">Wallpaper_View</string>
+    <string name="set_as_wallpaper">Set as Wallpaper</string>
+    <string name="share_button">Share_button</string>
+    <string name="download_button">download_button</string>
+
+    <string name="login_to_save_favourites">Login to save favourites</string>
+    <string name="designed_by_t_e_a_m">Designed By : T.E.A.M</string>
+    <string name="username">UserName</string>
+    <string name="usernameemail_gmail_com">Usernameemail@gmail.com</string>
+    <string name="logout">"      Logout      "</string>
+    <string name="categories">Categories</string>
+    <string name="categoryview">Categoryview</string>
+    <string name="responsible_for_the_look_and_workflow_of_the_application">Responsible for the look and workflow of the application</string>
+    <string name="amit_sharma_main_ui_ux_desginer">AMIT SHARMA (Main Ui/Ux desginer)</string>
+    <string name="responsible_for_all_backend_and_forntend_coding_of_the_application">Responsible for all backend and forntend coding of the application</string>
+    <string name="kushal_kanti_mehta_main_coder">KUSHAL KANTI MEHTA (Main Coder)</string>
+    <string name="about_us">ABOUT US</string>
+</resources>
