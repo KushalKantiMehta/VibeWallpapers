@@ -30,9 +30,6 @@ public class WallpapersAdapter extends RecyclerView.Adapter<WallpapersAdapter.ca
         this.mCtx = mCtx;
         this.wallpaperList = wallpaperList;
 
-        mInterstitialAd = new InterstitialAd(mCtx);
-        mInterstitialAd.setAdUnitId("ca-app-pub-2887998937008258/8151212405");
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
     }
 
 
@@ -71,12 +68,6 @@ public class WallpapersAdapter extends RecyclerView.Adapter<WallpapersAdapter.ca
 
         @Override
         public void onClick(View view) {
-            if(mInterstitialAd.isLoaded()){
-                mInterstitialAd.show();
-            }
-            else{
-                mInterstitialAd.loadAd(new AdRequest.Builder().build());
-            }
 
             int p = getAdapterPosition();
             Wallpaper w = wallpaperList.get(p);

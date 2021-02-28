@@ -47,10 +47,6 @@ public class WallpaperActivity extends AppCompatActivity {
         setContentView(R.layout.activity_wallpaper);
 
         /* initializations */
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {}
-        });
 
 
         Intent intent =getIntent();

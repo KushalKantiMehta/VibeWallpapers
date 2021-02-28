@@ -59,7 +59,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 
-public class WallpaperViewActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener, View.OnClickListener, RewardedVideoAdListener {
+public class WallpaperViewActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener, View.OnClickListener {
 
     int reward;
     ImageButton download, share;
@@ -83,12 +83,6 @@ public class WallpaperViewActivity extends AppCompatActivity implements Compound
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {}
         });
-
-        mAd = MobileAds.getRewardedVideoAdInstance(this);
-        mAd.setRewardedVideoAdListener(this);
-        mAd.loadAd("ca-app-pub-2887998937008258/4814602620",
-                new AdRequest.Builder()
-                        .build());
 
 
 
@@ -204,13 +198,7 @@ public class WallpaperViewActivity extends AppCompatActivity implements Compound
                 shareWallpaper();
                 break;
             case R.id.imageButton_download:
-
-                    if (mAd.isLoaded()) {
-                        mAd.show();
-                    }else{
-                        Toast.makeText(getApplicationContext(),"Try Again after sometime,Ad is being loaded",Toast.LENGTH_LONG).show();
-                    }
-
+                downloadWallpaper();
                 break;
 
         }
@@ -348,54 +336,5 @@ public class WallpaperViewActivity extends AppCompatActivity implements Compound
         return bmpuri;
     }
 
-
-    @Override
-    public void onRewardedVideoAdLoaded() {
-
-        Log.i("tag", "Rewarded: onRewardedVideoAdLoaded");
-
-    }
-
-    @Override
-    public void onRewardedVideoAdOpened() {
-
-    }
-
-    @Override
-    public void onRewardedVideoStarted() {
-
-    }
-
-    @Override
-    public void onRewardedVideoAdClosed() {
-
-        if(reward ==1){
-            downloadWallpaper();
-        }
-
-    }
-
-    @Override
-    public void onRewarded(RewardItem rewardItem) {
-       reward = rewardItem.getAmount();
-
-
-    }
-
-    @Override
-    public void onRewardedVideoAdLeftApplication() {
-
-    }
-
-    @Override
-    public void onRewardedVideoAdFailedToLoad(int i) {
-
-    }
-
-    @Override
-    public void onRewardedVideoCompleted() {
-
-
-    }
 
 }
